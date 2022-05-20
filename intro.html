@@ -5,19 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introduction</title>
-    <meta content="">
-    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
-    <script>
-        $(function(){
-                $(visible).click(function(){
-                    $('#invisible').toggleCLass("show");
-                });
-        });
-    </script>
-    <style>
-        .hide{display: none;}
-        .show{display: block;}
-    </style>
     <link rel="stylesheet" type="text/css" href="intro.css">
     <style type="text/css">
     </style>
@@ -25,14 +12,15 @@
 <body>
     <div class="intro">
         <div class="image" style="float: left">
-            <img src="./vamsi.png" alt="My pic" align="middle" width="600" height="450">
+            <img src="./vamsi.png" alt="My pic" align="middle" width="600" height="450" >
         </div>
-        <h1>Vamsi Preetham</h1>
-        <h2>Computer Science Engineering</h2>
+        <h1 draggable="true">Vamsi Preetham</h1>
+        <h2>Computer Science Engineering,IIT hyderabad</h2>
+
     </div>
-    <h2>Hobbies</h2>
+    <h4>Hobbies</h4>
 <h3>
-    <div id="speice">
+    <div id="hobby">
         <ul>
             <li><a href="https://www.google.com/search?q=International+cricket&sxsrf=ALiCzsbpWMEPaHC9negbTpE__brTPmiE5A%3A1652984126606&ei=PomGYunTJLPLseMPwdyReA&ved=0ahUKEwjp6r3dlez3AhWzZWwGHUFuBA8Q4dUDCA4&uact=5&oq=International+cricket&gs_lcp=Cgdnd3Mtd2l6EAMyCwguEIAEELEDEIMBMgsIABCABBCxAxCDATIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEOgcIABBHELADOgcIABCwAxBDOgoIABDkAhCwAxgBOgwILhDIAxCwAxBDGAI6DwguENQCEMgDELADEEMYAjoECCMQJzoKCAAQgAQQhwIQFDoHCAAQsQMQQzoICAAQgAQQsQM6DgguEIAEELEDEIMBENQCOgQILhBDOggIABCxAxCDAToHCCMQ6gIQJzoKCC4QsQMQgwEQQzoECAAQQzoKCAAQsQMQgwEQQzoQCC4QsQMQgwEQxwEQ0QMQQzoICC4QsQMQgwE6CAguEIAEELEDOhEILhCABBCxAxCDARDHARDRAzoLCC4QgAQQsQMQ1AI6CwguELEDEIMBEJECOgUIABCRAjoFCC4QkQI6EAguEIAEEIcCELEDEIMBEBQ6CgguELEDEIMBEA06BAgAEA1KBAhBGABKBAhGGAFQ_wRY5m5gpnFoBnABeAOAAZABiAGOGpIBBDQuMjeYAQCgAQGwAQrIARPAAQHaAQYIARABGAnaAQYIAhABGAg&sclient=gws-wiz">
                cricket</a></li>
@@ -48,14 +36,22 @@
     </div>
 </h3>
     <div >
-        <label for="Hobby"><h2>Experience</h2></label>
+        <label for="work"><h2><br>Experience</h2></label>
         
-        <select name="Hobby">
+        <select name="work">
             <option name="1"><h3>Full Stack Developer</h3></option>
             <option name="2"><h3>Worked in app development with a group of four</h3></option>
             <option name="3"><h3>Created a working model of a 3d fan</h3></option>
         </select>
         
+    </div>
+    <div class="alert">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <label for="file">Introduction</label>
+        <progress id="file" value="50" max="100"> 100% </progress>
+        <br>This is vamsi preetham from 2nd year cs department from iit hyderabad.<br> I am very keen to be a part 
+        of this Ecell.<br> I have some experience in app development,web development.<br> I wish Ecell could increase
+        my exposure towards the present trend and activities of the market.<br>
     </div>
 </body>
 </html>
